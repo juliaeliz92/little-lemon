@@ -1,0 +1,48 @@
+.drawer-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    .drawer {
+        background-color: white;
+        width: 50vw;
+        height: 100%;
+        padding: 3em 1em;
+        text-align: center;
+        nav{
+            margin-top: 2em;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    font-family: "Karla";
+                    margin-bottom: 2em;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.openOverlay {
+    display: block;
+    left: 0;
+}
+
+.closeOverlay {
+    display: none;
+    left: -100vw
+}
+
+.openDrawer {
+    left: 0;
+    transition: left 2s;
+}
+
+.closeDrawer {
+    left: -50vw;
+    transition: left 2s;
+}
+

@@ -1,7 +1,7 @@
-const Nav = ({links}) => {
+const Nav = ({links, isHorizontal}) => {
     return <nav>
-        <ul>
-            {links.map(link => <li><a>{link.label}</a></li>)}
+        <ul className={`${isHorizontal ? 'list-horizontal' : ''}`}>
+            {links.map((link, ind) => <li key={ind}><a>{link.label}</a></li>)}
         </ul>
     </nav>
 }

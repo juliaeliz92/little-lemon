@@ -1,9 +1,6 @@
-import Nav from "./Nav"
-import { navLinks } from "../constants"
-
-const Header = () => {
-    return <header>
-        <Nav links={navLinks} />
+const Header = ({children}) => {
+    return <header className="app-bar">
+        {children}
     </header>
 }
 
