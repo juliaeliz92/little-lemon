@@ -1,0 +1,48 @@
+.specials-panel {
+    width: 250px;
+    img {
+        width: 250px;
+        height: 180px;
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+    }
+    &:not(:last-child) {
+        margin-right: 1em;
+    }
+    .specials-panel-main {
+        margin: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-between;
+        .specials-panel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h1 {
+                font-family: 'Markazi Text';
+                font-size: 24px;
+                font-weight: 600;
+                margin: 0;
+            }
+            h3 {
+                margin: 0;
+                color: #EE9972;
+                font-family: 'Karla';
+                font-size: 16px;
+            }
+        }
+        p, a {
+            font-family: 'Karla';
+            font-size: 16px;
+        }
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: #EE9972;
+            }
+        }
+    }
+}

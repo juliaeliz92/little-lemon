@@ -1,0 +1,13 @@
+button {
+    border-radius: 16px;
+    background: #F4CE14;
+    padding: 8px 16px;
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    &:hover {
+        background: #495E57;
+        color: #fff;
+    }
+}
