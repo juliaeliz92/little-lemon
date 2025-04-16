@@ -40,3 +40,25 @@ export const specials = [
         image: 'lemon dessert.jpg'
     },
 ]
+
+export const testimonials = [
+    {
+        name: 'John Smith',
+        review: 'Review Text',
+        rating: 2
+    }, {
+        name: 'John Smith',
+        review: 'Review Text',
+        rating: 2
+    },
+    {
+        name: 'John Smith',
+        review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+        rating: 2
+    },
+    {
+        name: 'John Smith',
+        review: 'Review Text',
+        rating: 2
+    }
+]

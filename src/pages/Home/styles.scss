@@ -47,6 +47,20 @@
         margin-top: 1em;
     }
 }
+.testimonial-section {
+    padding: 2em;
+    h1 {
+        font-family: 'Markazi Text';
+        font-weight: 500;
+        font-size: 36px;
+        text-align: center;
+    }
+    .testimonials-row {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .reserve-table-section {

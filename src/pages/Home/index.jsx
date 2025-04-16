@@ -1,5 +1,5 @@
-import { Button, SpecialsPanel } from '../../components'
-import { specials } from '../../constants'
+import { Button, SpecialsPanel, TestimonialPanel } from '../../components'
+import { specials, testimonials } from '../../constants'
 import './styles.scss'
 
 const Home = () => {
@@ -22,6 +22,14 @@ const Home = () => {
             </div>
             <section className='specials-row'>
                 {specials.map(special => <SpecialsPanel special={special} />)}
+            </section>
+        </section>
+        <section className='testimonial-section'>
+            <h1>Testimonials</h1>
+            <section className='testimonials-row'>
+                {testimonials.map(testimonial => 
+                    <TestimonialPanel testimonial={testimonial} />
+                )}
             </section>
         </section>
     </div>

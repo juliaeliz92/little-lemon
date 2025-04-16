@@ -1,0 +1,25 @@
+.testimonial-panel {
+    min-width: 200px;
+    max-width: 200px;
+    font-family: 'Karla';
+    img {
+        width: 45px;
+        height: 45px;
+    }
+    .rating {
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .customer-profile {
+        display: flex;
+        margin-top: 1em;
+    }
+    h3 {
+        font-weight: bold;
+        margin-left: 1em;
+        font-size: 14px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
