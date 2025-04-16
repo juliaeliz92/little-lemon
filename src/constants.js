@@ -62,3 +62,5 @@ export const testimonials = [
         rating: 2
     }
 ]
+
+export const occasionOptions = ['Birthday', 'Anniversary']

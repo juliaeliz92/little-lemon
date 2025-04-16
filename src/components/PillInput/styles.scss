@@ -1,0 +1,20 @@
+.pill-container {
+    color: #495E57;
+    font-size: 16px;
+    font-weight: bolder;
+    background: #EDEFEE;
+    padding: 1em;
+    border-radius: 16px;
+    margin-bottom: 1em;
+    width: fit-content;
+    &:not(:last-child) {
+        margin-right: 1em;
+    }
+    &:hover {
+        background: #918f8f;
+    }
+    &.active {
+        background: #495E57;
+        color: #fff;
+    }
+}

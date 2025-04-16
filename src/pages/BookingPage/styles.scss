@@ -1,0 +1,160 @@
+.booking-container {
+    .hero {
+        text-align: center;
+        background: #495e57;
+        img {
+            width: 100vw;
+            height: auto;
+        }
+        h1 {
+            font-family: 'Markazi Text';
+            font-weight: bold;
+            font-size: 45px;
+            color: #F4CE14;
+            margin: 2px 0;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-family: 'Karla';
+            font-size: 25px;
+            padding: 20 px;
+            margin: 0;
+            color: #fff;
+        }
+        .header {
+            padding: 2em 0;
+        }
+    }
+    .form-section {
+        padding: 2em 1em;
+        font-family: 'Karla';
+        font-size: 25px;
+        .column {
+            margin-bottom: 1em;
+        }
+        label {
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid black;
+            margin-bottom: 10px;
+        }
+        input {
+            border: none;
+            border-radius: 16px;
+            width: 95%;
+            background: #D9D9D9;
+            font-size: 25px;
+            padding: 10px;
+        }
+        .counter-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1em;
+            span {
+                margin: 0 1em;
+            }
+            div {
+                border-radius: 16px;
+                background: #D9D9D9;
+                padding: 10px;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                &:hover {
+                    background: #918f8f;
+                }
+            }
+        }
+        .occasions-input-container {
+            display: flex;
+        }
+    }
+    .submit-button {
+        font-size: 25px;
+        width: 100%;
+        margin-top: 8px;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .booking-container {
+        .hero {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 1em;
+            img {
+                width: 45vw;
+                height: auto;
+            }
+            .header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        .form-section {
+            padding: 2em;
+            form {
+                .row {
+                    display: flex;
+                    justify-content: space-around;
+                    .column {
+                        width: 40%
+                    }
+                }
+                .submit-button-container {
+                    text-align: center;
+                    .submit-button {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .booking-container {
+        .hero {
+            justify-content: center;
+            padding: 3em 0;
+            .header {
+                width: 50vw;
+            }
+            img {
+                width: 430px;
+                margin-left: 2em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .booking-container {
+        .hero {        
+            .header {
+                width: 25vw;
+            }
+        }
+        .form-section {
+            form {
+                .row {
+                    justify-content: space-evenly;
+                    .column {
+                        width: 25%;
+                    }
+                }
+                .submit-button-container {
+                    .submit-button {
+                        width: 45%;
+                    }
+                }
+            }
+        }
+    }
+   
+}
