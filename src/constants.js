@@ -10,7 +10,7 @@ export const navLinks = [
         link: '#specials'
     }, {
         label: 'Reservations',
-        link: '#reserve-table'
+        link: '/booking'
     }, {
         label: 'Order Online',
         link: '#specials'

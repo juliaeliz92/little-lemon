@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { AppBar, Drawer } from './components'
-import { Home } from './pages';
+import { Home, BookingPage } from './pages';
 import { Footer } from './sections';
 import { BrowserRouter, Routes, Route } from "react-router";
 import './App.css'
@@ -25,6 +25,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/booking" element={<BookingPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />
