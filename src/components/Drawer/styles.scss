@@ -20,6 +20,14 @@
                     font-family: "Karla";
                     margin-bottom: 2em;
                     font-size: 18px;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                
+                        &:hover {
+                            color: #495e57;
+                        }
+                    }
                 }
             }
         }

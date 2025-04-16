@@ -10,6 +10,13 @@
                 float: left;
                 font-family: "Karla";
                 padding-left: 2em;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    &:hover {
+                        color: #495e57;
+                    }
+                }
             }
         }
     }

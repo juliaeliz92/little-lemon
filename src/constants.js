@@ -1,22 +1,22 @@
 export const navLinks = [
     {
         label: 'Home',
-        link: ''
+        link: '/'
     }, {
         label: 'About',
-        link: ''
+        link: '#about-us'
     }, {
         label: 'Menu',
-        link: ''
+        link: '#specials'
     }, {
         label: 'Reservations',
-        link: ''
+        link: '#reserve-table'
     }, {
         label: 'Order Online',
-        link: ''
+        link: '#specials'
     }, {
         label: 'Login',
-        link: ''
+        link: '/'
     }
 ]
 

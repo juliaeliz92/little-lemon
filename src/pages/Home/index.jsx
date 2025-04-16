@@ -4,7 +4,7 @@ import './styles.scss'
 
 const Home = () => {
     return <div>
-        <section className="reserve-table-section">
+        <section className="reserve-table-section" id='reserve-table'>
             <img src="chicago-food.jpg" alt="chicago" />
             <div className='text-section'>
                 <h1>Little Lemon</h1>
@@ -15,7 +15,7 @@ const Home = () => {
                 <Button>Reserve a table</Button>
             </div>
         </section>
-        <section className='special-section'>
+        <section className='special-section' id='specials'>
             <div className='special-header'>
                 <h2>Specials</h2>
                 <Button>Online Menu</Button>
@@ -32,7 +32,7 @@ const Home = () => {
                 )}
             </section>
         </section>
-        <section className='about-us-section'>
+        <section className='about-us-section' id="about-us">
             <div className='description'>
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
