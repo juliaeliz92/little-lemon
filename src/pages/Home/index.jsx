@@ -32,6 +32,20 @@ const Home = () => {
                 )}
             </section>
         </section>
+        <section className='about-us-section'>
+            <div className='description'>
+                <h1>Little Lemon</h1>
+                <h2>Chicago</h2>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+            </div>
+            <div className='gallery-container'>
+                <div className='gallery'>
+                    <img src='restaurant.jpg' className='img1' alt='kitchen' />
+                    <img src='kitchen.jpg' className='img2' alt='restaurant' />
+                </div>
+            </div>
+        </section>
     </div>
 }
 

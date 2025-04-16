@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { AppBar, Drawer } from './components'
 import { Home } from './pages';
+import { Footer } from './sections';
 import { BrowserRouter, Routes, Route } from "react-router";
 import './App.css'
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </>
   )
 }
