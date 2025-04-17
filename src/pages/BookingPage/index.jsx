@@ -1,12 +1,21 @@
 import { useState } from 'react'
 import { occasionOptions } from '../../constants'
 import { PillInput, Button } from '../../components'
+import { useBookingDateTime } from '../../hooks'
 import './styles.scss'
 
 const BookingPage = () => {
-    const [bookingDate, setBookingDate] = useState(null)
-    const [bookingTime, setBookingTime] = useState(null)
+    const [initializeDateTime, updateTime] = useBookingDateTime()
+    const [bookingDate, setBookingDate] = useState(initializeDateTime()[0])
+    const [bookingTime, setBookingTime] = useState()
     const [numberGuests, setNumberGuests] = useState(1)
+    const [bookingHours, setBookingHours] = useState(initializeDateTime()[1])
+
+    const handleBookingDate = (e) => {
+        e.preventDefault()
+        setBookingDate(e.target.value)
+        setBookingHours(updateTime(e.target.value)[1])
+    } 
 
     return <main className='booking-container'>
         <section className="hero">
@@ -24,17 +33,15 @@ const BookingPage = () => {
                         <input 
                             type='date' 
                             id="booking-date" 
-                            min={new Date().toISOString().split("T")[0]}
+                            min={initializeDateTime()[0]}
                             value={bookingDate} 
-                            onChange={(e) => setBookingDate(e.target.value)} />
+                            onChange={handleBookingDate} />
                     </div>
                     <div className="column">
                         <label htmlFor='booking-time'>Time</label>
-                        <input 
-                            type='time' 
-                            id="booking-time" 
-                            value={bookingTime} 
-                            onChange={(e) => setBookingTime(e.target.value)} />
+                        <select id="booking-time" value={bookingTime} onChange={(e) => setBookingTime(e.target.value)}>
+                            {bookingHours.map((hour) => <option value={hour} key={hour}>{hour}</option>)}
+                        </select>
                     </div>
                 </div>
                 <div className="row">
@@ -49,7 +56,7 @@ const BookingPage = () => {
                     <div className="column">
                         <label htmlFor='occasion'>Occasion</label>
                         <div className='occasions-input-container' id="occasion">
-                            {occasionOptions.map(occasion => <PillInput label={occasion} />)}
+                            {occasionOptions.map((occasion, ind) => <PillInput label={occasion} key={ind}/>)}
                         </div>
                     </div>
                 </div>

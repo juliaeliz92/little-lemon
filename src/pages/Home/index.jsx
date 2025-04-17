@@ -21,14 +21,14 @@ const Home = () => {
                 <Button>Online Menu</Button>
             </div>
             <section className='specials-row'>
-                {specials.map(special => <SpecialsPanel special={special} />)}
+                {specials.map((special, ind) => <SpecialsPanel special={special} key={ind} />)}
             </section>
         </section>
         <section className='testimonial-section'>
             <h1>Testimonials</h1>
             <section className='testimonials-row'>
-                {testimonials.map(testimonial => 
-                    <TestimonialPanel testimonial={testimonial} />
+                {testimonials.map((testimonial, ind) => 
+                    <TestimonialPanel testimonial={testimonial} key={ind}/>
                 )}
             </section>
         </section>
