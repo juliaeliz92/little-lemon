@@ -1,7 +1,7 @@
 import './styles.scss'
 
 const Button = ({children, className}) => {
-    return <button className={className}>{children}</button>
+    return <button className={className} data-testid="submit-button">{children}</button>
 }
 
 export default Button

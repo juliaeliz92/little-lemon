@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { AppBar, Drawer } from './components'
-import { Home, BookingPage } from './pages';
+import { Home, BookingPage, ConfirmationPage } from './pages';
 import { Footer } from './sections';
 import { BrowserRouter, Routes, Route } from "react-router";
 import './App.css'
@@ -19,6 +19,7 @@ function App() {
   }
 
   return (
+   
     <>
       <AppBar handleDrawer={onClickDrawer}/>
       <Drawer isOpen={isDrawerOpen} closeDrawer={handleDrawerClose}/>
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/booking" element={<BookingPage />} />
+          <Route path="/booking-confirmed" element={<ConfirmationPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />
