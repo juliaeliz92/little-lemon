@@ -89,19 +89,21 @@ const BookingPage = () => {
                             <div 
                                 role='button'
                                 data-testid="increment-guests"
+                                aria-label='Increment Guest Numbers'
                                 onClick={() => setNumberGuests(numberGuests => numberGuests + 1)}
                             >+</div> 
-                            <span data-testid="number-guests">{numberGuests}</span>
+                            <span data-testid="number-guests" aria-label='number of guests'>{numberGuests}</span>
                             <div 
                                 role='button'
                                 data-testid="decrement-guests"
+                                aria-label='Decrement Guest Numbers'
                                 onClick={() => setNumberGuests(numberGuests => numberGuests - 1)}
                             >-</div> 
                         </div>
                     </div>
                     <div className="column">
                         <label htmlFor='occasion'>Occasion</label>
-                        <div className='occasions-input-container' id="occasion">
+                        <div className='occasions-input-container' id="occasion" aria-label='Select booking occasion'>
                             {occasionOptions.map((occasion, ind) => <PillInput 
                                 label={occasion} 
                                 key={ind}
@@ -113,6 +115,7 @@ const BookingPage = () => {
                 <div className="submit-button-container">
                     <Button 
                         className='submit-button'
+                        aria-label='click to submit booking'
                         
                     >Submit Booking</Button>
                 </div>
